@@ -2,7 +2,7 @@
 
 五大部门通用准则 — 一个跨平台的结构化工作规范 skill，确保 AI 辅助编码时安全、极简、并行、可验证、高质量。
 
-兼容 **Claude Code** · **Hermes** · 遵循 [agentskills.io](https://agentskills.io) 标准。
+兼容 **Claude Code** · **Hermes** · **Cursor** · **Windsurf** · **GitHub Copilot** · **Cline** · 遵循 [agentskills.io](https://agentskills.io) 标准。
 
 ## 五大部门
 
@@ -27,7 +27,28 @@ cp SKILL.md ~/.claude/skills/dev-standards/
 cp dev-standards.skill.md ~/.hermes/skills/
 ```
 
-重启后自动生效。
+**Cursor:**
+```bash
+cat SKILL.md >> .cursorrules
+```
+
+**Windsurf:**
+```bash
+cat SKILL.md >> .windsurfrules
+```
+
+**GitHub Copilot:**
+```bash
+mkdir -p .github
+cp SKILL.md .github/copilot-instructions.md
+```
+
+**Cline:**
+```bash
+cat SKILL.md >> .clinerules
+```
+
+重启对应 AI 工具后自动生效。
 
 ## 触发条件
 
