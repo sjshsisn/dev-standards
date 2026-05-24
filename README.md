@@ -1,6 +1,8 @@
 # dev-standards
 
-Claude Code 五大部门通用准则 — 一个结构化的工作规范 skill，确保 AI 辅助编码时安全、极简、并行、可验证、高质量。
+五大部门通用准则 — 一个跨平台的结构化工作规范 skill，确保 AI 辅助编码时安全、极简、并行、可验证、高质量。
+
+兼容 **Claude Code** · **Hermes** · 遵循 [agentskills.io](https://agentskills.io) 标准。
 
 ## 五大部门
 
@@ -14,22 +16,22 @@ Claude Code 五大部门通用准则 — 一个结构化的工作规范 skill，
 
 ## 安装
 
-把 `SKILL.md` 放到 `~/.claude/skills/dev-standards/` 目录下：
-
+**Claude Code:**
 ```bash
 mkdir -p ~/.claude/skills/dev-standards
 cp SKILL.md ~/.claude/skills/dev-standards/
 ```
 
-重启 Claude Code 后自动生效。
+**Hermes:**
+```bash
+cp dev-standards.skill.md ~/.hermes/skills/
+```
+
+重启后自动生效。
 
 ## 触发条件
 
 编码任务时自动触发，涵盖：写代码、改文件、重构、新增功能、部署、创建文档内容。
-
-## 灵感来源
-
-这套规范源自 [CLAUDE.md](https://docs.anthropic.com/en/docs/claude-code/settings) 和行为准则的实际项目迭代，提炼为可复用的 skill 格式。
 
 ## License
 
